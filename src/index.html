@@ -4,20 +4,34 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>goit-js-hw-11</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+    <section class="search-section">
 
-    <load src="./partials/footer.html" />
+      <div class="search-container">
+        <form class="search-form js-search-form"  name="searchImageForm">
+          <div class="input-group mb-3">
+           <input class="form-control js-search-input" type="text" name="searchKeyword" placeholder="Введіть дані для пошуку" required aria-label="Search images" aria-describedby="button-addon2" >
+
+           <button class="search-btn" type="submit" id="button-addon2">Пошук</button>
+
+          </div>
+        </form>
+      </div>
+    </section> 
+
+    <section class="gallery-section">
+      <div class="gallery-container">
+        <div class="gallery-list js-gallery row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"></div>
+        <span class="loader js-loader is-hidden"></span>
+      </div>
+    </section>
 
     <script type="module" src="./main.js"></script>
+
+
   </body>
 </html>
