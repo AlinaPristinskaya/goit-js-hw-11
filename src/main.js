@@ -8,7 +8,7 @@ import { fetchPhotosByQuery } from './js/pixabay-api.js';
 import { createGalleryItemMarkup } from './js/render-functions.js';
 
 const searchForm = document.querySelector('.js-search-form');
-const listGallery = document.querySelector('.gallery-list');
+const listGallery = document.querySelector('.gallery');
 const loader = document.querySelector('.loader');
 
 

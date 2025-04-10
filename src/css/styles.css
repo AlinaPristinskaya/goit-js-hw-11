@@ -155,7 +155,7 @@
   height: 152px;
 }
 
-.gallery-list{
+.gallery{
   margin: 0 auto;
  display: flex;
   flex-wrap: wrap;
